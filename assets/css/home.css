@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(212, 120, 140);
+}
+.heading{
+    text-align: center;
+    color:black;
+    margin-top: 25px;
+    margin-bottom:45px;
+}
+.form{
+    /* display:flex;
+    flex-wrap: wrap;
+    flex-direction: column; */
+    text-align: center;
+    width:50%;
+    left: 25%;
+    position:relative;
+}
+
+.desc_Class input{
+    height: 40px;
+    width: 100%;
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+    border-radius: 22px;
+    outline: none;
+}
+    
+    
+   
+
+ /* #task{
+    height: 25px;
+    width:60%
+    
+    
+ } */
+
+ .desc_Class input:hover{
+    box-shadow: 0px 0px 2px 2px whitesmoke;
+    background-color:beige;
+    
+ 
+ }
+ .select_and_input{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.select_and_input input{
+    height: 25px;
+    
+    text-align: center;
+    transition: transform 0.3s;
+}
+.select_and_input select:hover{
+    box-shadow: 0px 0px 5px 2px white ;
+    background-color: bisque;
+}
+.select_and_input input:hover{
+    box-shadow: 0px 0px 5px 2px white ;
+    background-color: bisque;
+}
+.buttonDesign{
+    height: 30px;
+    width: 120px;
+    color: white;
+    transition: transform 0.3s;
+}
+.buttonDesign:hover{
+    box-shadow: 0px 0px 5px 2px white ; 
+    transform:scale(1.1);
+}
+
+.colorGrey{
+    background-color: gray;
+}
+.colorRed{
+
+    background-color: red;
+    border-radius: 10px;
+}
+
+
+.todo{
+    
+        /* border: 1px solid white;
+        width: 50%;
+        height: 90px;
+        color: white;
+        display: flex;
+        align-items: baseline;
+        /* justify-content: space-evenly; */
+        /* position: relative;
+        left: 25%;  */
+        
+        padding:5px;
+        border: 1px solid black;
+        border-radius: 10px;
+        list-style: none;
+        width:50%;
+        margin-left: 25%;
+        font-size: 20px;
+        
+}
+.delete-button{
+    margin-left: 25%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+
