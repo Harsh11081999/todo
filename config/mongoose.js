@@ -1,3 +1,4 @@
+require('dotenv').config() 
 const mongoose = require('mongoose');
 // mongoose.connect('mongodb://localhost/TODOLIST');
 mongoose.connect(`${process.env.Db_uri}`);

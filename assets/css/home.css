@@ -1,24 +1,58 @@
+
 body{
+    /* margin: 0; */
+    font-family: sans-serif;
     background-color: rgb(212, 120, 140);
 }
-.heading{
+/* style for single task div container */
+
+.singleTask{
+    padding:5px;
+    border: 1px solid black;
+     border-radius: 10px;
+    width: 50%;
+    height: 90px;
+    color: black;
+    display: flex;
+    align-items: baseline;
+    /* justify-content: space-evenly; */
+    position: relative;
+    left: 25%;
+    font-size: 20px;
+}
+/* style for del check */
+.delechack{
+    margin: 15px;
+
+}
+/* style for category section */
+
+.catesec{
+    border: 1px solid black;
+    background-color: chartreuse;
+}
+
+/* style for TODO heading */
+
+.todoheading{
     text-align: center;
     color:black;
     margin-top: 25px;
     margin-bottom:45px;
 }
-.form{
-    /* display:flex;
-    flex-wrap: wrap;
-    flex-direction: column; */
+
+/* style for form */
+
+.form_class{
+    width: 50%;
     text-align: center;
-    width:50%;
+    position: relative;
     left: 25%;
-    position:relative;
 }
+/* style for description area */
 
 .desc_Class input{
-    height: 40px;
+    height: 45px;
     width: 100%;
     margin: 15px;
     text-align: center;
@@ -26,31 +60,32 @@ body{
     border-radius: 22px;
     outline: none;
 }
-    
-    
-   
+/* implemented some hover in description section */
+.desc_Class input:hover{
+    /* transform: scale(1.1); */
+    box-shadow: 0px 0px 2px 2px whitesmoke ;
+    background-color: beige;
+}
 
- /* #task{
-    height: 25px;
-    width:60%
-    
-    
- } */
+/* design for select and option START */
+/* style for select and options input input area */
 
- .desc_Class input:hover{
-    box-shadow: 0px 0px 2px 2px whitesmoke;
-    background-color:beige;
-    
- 
- }
- .select_and_input{
+.select_and_input{
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
 }
+
+.select_and_input select{
+    height: 45px;
+    width: 40%;
+    transition: transform 0.3s;
+    text-align: center;
+    margin-right: 50px;
+}
 .select_and_input input{
-    height: 25px;
-    
+    height: 45px;
+    width: 40%;
     text-align: center;
     transition: transform 0.3s;
 }
@@ -62,6 +97,17 @@ body{
     box-shadow: 0px 0px 5px 2px white ;
     background-color: bisque;
 }
+/* design for select and option END */
+
+/* design for dates value */
+.datesValues{
+    transition: transform 0.3s;
+}
+.datesValues:hover{
+    box-shadow: 0px 0px 5px 2px white ;
+    background-color: bisque;
+}
+/* design for button */
 .buttonDesign{
     height: 30px;
     width: 120px;
@@ -72,42 +118,90 @@ body{
     box-shadow: 0px 0px 5px 2px white ; 
     transform:scale(1.1);
 }
+.colorRed{
+    background-color: red;
+    border-radius: 10px;
+    
+}
 
 .colorGrey{
     background-color: gray;
-}
-.colorRed{
-
-    background-color: red;
     border-radius: 10px;
 }
-
-
-.todo{
-    
-        /* border: 1px solid white;
-        width: 50%;
-        height: 90px;
-        color: white;
-        display: flex;
-        align-items: baseline;
-        /* justify-content: space-evenly; */
-        /* position: relative;
-        left: 25%;  */
-        
-        padding:5px;
-        border: 1px solid black;
-        border-radius: 10px;
-        list-style: none;
-        width:50%;
-        margin-left: 25%;
-        font-size: 20px;
-        
+.commonClass{
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px;    
+    color: white;
+    transition: transform 0.3s;
 }
-.delete-button{
-    margin-left: 25%;
-    margin-bottom: 5px;
-    border-radius: 5px;
+.commonClass:hover{
+    box-shadow: 0px 0px 5px 2px rgb(14, 6, 6) ; 
+    transform:scale(1.2);
+}
+/* design for edit sction */
+.editClass{
+        transition: transform 0.3s;
+        position: absolute;
+        left: 80%;
+        margin: 20px;
+}
+.editClass:hover{
+    box-shadow: 0px 0px 5px 2px rgb(14, 6, 6) ; 
+    transform:scale(1.2);
 }
 
+.editClass a{
+text-decoration: none;
+color: white;
+border: 1px solid  white;
+padding: 4px;
+background-color: brown;
+}
+/* for placing placeholder in the center  */
+input[type="textarea"]::placeholder { 
+                  
+    /* Firefox, Chrome, Opera */
+    text-align: center;
+}
+/* design for EDIT button*/
+.edit-button{
+    margin-top: 10px;
+    height: 30px;
+    width: 90px;
+    background-color: brown;
+    color: white;
+}
 
+input.delechack{
+    width: 17px;
+    height: 17px;
+}
+
+/* Design for different category */
+.work{
+    background-color:lightcoral;
+        
+}
+.Personal{
+    background-color: skyblue;
+
+}
+.Claeaning{
+    background-color: green;
+}
+.Otheres{
+    background-color: teal;
+}
+.name_and_dueDate{
+    height: auto;
+    width: 200px;
+}
+.dueDate{
+    width: fit-content;
+}
+.color-white{
+    color: white;
+}

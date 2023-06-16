@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-
 const todoSchema = new mongoose.Schema({
     desc:{
         type:String,
@@ -13,7 +12,7 @@ const todoSchema = new mongoose.Schema({
         type:String,
         required:true
     }   
+})
 
-});
-const todo_list = mongoose.model('tasks',todoSchema);
-module.exports = todo_list;
+const TodoLists = mongoose.model('TodoLists', todoSchema);
+module.exports  = TodoLists;
